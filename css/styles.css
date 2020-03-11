@@ -128,6 +128,10 @@ div[class^="contents"]>h3{
   color:white;
 }
 
+.pace-container>h1{
+  font-size:18px;
+}
+
 /* select  */
 
 .select-pace{
@@ -332,17 +336,23 @@ div[class^="price-"]{
   background-image: url(../img/vace_main.png);
   background-position: center;
   background-size: cover;
-  width:600px;
   height:600px;
 }
 
-.vace-sentence{
-  text-align: left;
-  width:40%;
+@media screen and (min-width: 770px){
+.vace-item{
+  width:50%;
+}
+}
+@media screen and (max-width: 770px){
+.vace-item{
+  width:90%;
+}
 }
 
 .vace-sentence>h2{
   white-space: nowrap;
+  font-size:14px;
 }
 
 .vace-imgs{
@@ -350,7 +360,7 @@ div[class^="price-"]{
 }
 
 .vace-img{
-  margin:10px 30px;
+  margin:10px;
   position: relative;
 }
 
@@ -413,7 +423,7 @@ div[class^="price-"]{
   background-image: url(../img/last.png);
   background-position: bottom;
   background-size: cover;
-  width:400px;
+  width:350px;
   height:400px;
   align-self: flex-end;
 }
