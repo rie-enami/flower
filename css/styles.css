@@ -261,7 +261,7 @@ div[class^="price-"]{
 }
 
 .kind-items{
-  width:500px;
+  width:400px;
   position: absolute;
   top: 50%;
   left:50%;
@@ -271,7 +271,12 @@ div[class^="price-"]{
 }
 
 .kind-item{
-  margin-top:10px;
+  margin-top:30px;
+}
+
+.kind-item>h3{
+  text-align: left;
+
 }
 
 @media screen and (max-width: 770px){
@@ -283,42 +288,61 @@ div[class^="price-"]{
 /* vase */
 .vace{
   background-color: #e7e3df;
-  position: relative;
 }
 
+@media screen and (min-width: 771px){
 .vace-title{
-  padding:50px;
+  padding-top:100px;
   text-align: center;
+  margin-right:500px;
+  margin-bottom: 30px;
+}
+}
+
+
+@media screen and (max-width: 770px){
+.vace-title{
+  padding-top: 20px;;
+  text-align: center;
+}
 }
 
 .vace-title>h3{
   background-color: white;
   display: inline;
-  padding:5px
+  padding:5px;
+  white-space: nowrap;
 }
 
+
+.vace-contents{
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 770px){
 .vace-contents{
   display: flex;
   flex-direction: row-reverse;
 }
+}
+
+
+.vace-item{
+  background-image: url(../img/vace_main.png);
+  background-position: center;
+  background-size: cover;
+  width:600px;
+  height:600px;
+}
 
 .vace-sentence{
-  width:450px;
-  margin-top: 200px;
+  text-align: left;
+  width:40%;
 }
 
-.vace-title{
-  position: absolute;
-  top:0%;
-  left:15%; 
-}
-
-@media screen and (max-width: 770px){
-  .vace-title{ 
-    position: absolute;
-    top:5%;
-    left:35%;
-  }
+.vace-sentence>h2{
+  white-space: nowrap;
 }
 
 .vace-imgs{
@@ -373,7 +397,7 @@ div[class^="price-"]{
   justify-content: space-around;
 }
 
-/* close */
+/* last */
 
 .last{
   height: 550px;
@@ -386,11 +410,23 @@ div[class^="price-"]{
 }
 
 .last-img{
-  width:350px;
+  background-image: url(../img/last.png);
+  background-position: bottom;
+  background-size: cover;
+  width:400px;
+  height:400px;
   align-self: flex-end;
 }
 
+@media screen and (max-width: 770px){
+  .last-img{
+    align-self: center;
+    
+  }
+}
+
 .last-logo{
+  padding-top: 50px;
   color:black;
   align-self: center;
 }
@@ -407,25 +443,28 @@ div[class^="price-"]{
 
 .footer-container{
   padding-top:50px;
+  margin:0 auto;
   display: flex;
   justify-content: space-evenly;
-  margin:0 auto;
 }
 
-.footer-menu>ul{
-  list-style-type: none;
-
-}
-
-.footer-menu li{
+@media screen and (min-width: 770px){
+.footer-menu>li{
   display: inline;
+}
+}
 
+
+.footer-menu>li{
+  list-style-type: none;
 }
 
 .footer-menu a{
   color:white;
   text-decoration: none;
-  padding:0 30px;
+  padding:0 10px;
+  white-space: nowrap;
+  
 }
 
 .copy-right{
