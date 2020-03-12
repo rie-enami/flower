@@ -289,7 +289,7 @@ div[class^="price-"]{
   }
 }
 
-/* vase */
+/* vace */
 .vace{
   background-color: #e7e3df;
 }
@@ -298,7 +298,7 @@ div[class^="price-"]{
 .vace-title{
   padding-top:100px;
   text-align: center;
-  margin-right:500px;
+  margin-right:400px;
   margin-bottom: 30px;
 }
 }
@@ -331,7 +331,6 @@ div[class^="price-"]{
 }
 }
 
-
 .vace-item{
   background-image: url(../img/vace_main.png);
   background-position: center;
@@ -349,6 +348,11 @@ div[class^="price-"]{
   width:90%;
 }
 }
+@media screen and (max-width: 770px){
+.vace-sentence{
+  text-align: center;
+}
+}
 
 .vace-sentence>h2{
   white-space: nowrap;
@@ -363,6 +367,13 @@ div[class^="price-"]{
   margin:10px;
   position: relative;
 }
+
+@media screen and (max-width: 770px){
+  .offer , .vace-imgs{
+    margin-left:50px;
+  }
+  }
+  
 
 .vace-img>p{
   text-align: center;
