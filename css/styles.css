@@ -95,18 +95,21 @@ p{
 .contents-1{
   background-image: url(../img/contents_1.png);
   flex:1;
+  min-height: 540px;
   width:100%;
 }  
 
 .contents-2{
   background-image: url(../img/contents_2.png);
   flex:1;
+  min-height: 540px;
   width:100%;
 }  
 
 .contents-3{
   background-image: url(../img/contents_3.png);
   flex:1;
+  min-height: 540px;
   width:100%;
 }  
 
